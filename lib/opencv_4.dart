@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:opencv_4/factory/colormaps/applycolormap_factory.dart';
 import 'package:opencv_4/factory/colorspace/cvtcolor_factory.dart';
 import 'package:opencv_4/factory/detection/canny_factory.dart';
+import 'package:opencv_4/factory/findcontours/draw_contours_factory.dart';
 import 'package:opencv_4/factory/findcontours/find_contours_factory.dart';
 import 'package:opencv_4/factory/imagefilter/bilateralfilter_factory.dart';
 import 'package:opencv_4/factory/imagefilter/blur_factory.dart';
@@ -315,6 +316,9 @@ class Cv2 {
 
   ///Constants util for [AdaptiveThreshold]
   static const int ADAPTIVE_THRESH_MEAN_C = 0, ADAPTIVE_THRESH_GAUSSIAN_C = 1;
+
+  /// Constants util for [DrawContours]
+  static const int LINE_4 = 4, LINE_8 = 8, LINE_AA = 16;
 
   static const platform = const MethodChannel('opencv_4');
 
@@ -732,6 +736,30 @@ class Cv2 {
       pathString: pathString,
       threshold1: threshold1,
       threshold2: threshold2,
+    );
+
+    /// Function returns the response from method channel
+    return result;
+  }
+
+  /// [drawContours] function of Module: Drawing Functions
+  static Future<Uint8List?> drawContours({
+    CVPathFrom pathFrom = CVPathFrom.ASSETS,
+    required String pathString,
+    required List<Rect> contours,
+    required double threshold2,
+    required int thickness,
+    required int lineType,
+    required int maxLevel,
+  }) async {
+    /// Variable to store operation result
+    final Uint8List? result = await DrawContoursFactory.drawContours(
+      pathFrom: pathFrom,
+      pathString: pathString,
+      contours: contours,
+      thickness: thickness,
+      lineType: lineType,
+      maxLevel: maxLevel,
     );
 
     /// Function returns the response from method channel

@@ -342,6 +342,23 @@ class Opencv4Plugin: FlutterPlugin, MethodCallHandler {
                 result.error("OpenCV-Error", "Android: "+e.message, e)
             }
         }
+        // Module: Drawing Functions
+        "drawContours" -> {
+            try {
+                DrawContoursFactory.process(
+                    call.argument<Int>("pathType") as Int,
+                    call.argument<String>("pathString") as String,
+                    call.argument<ByteArray>("data") as ByteArray,
+                    call.argument<List<Map<String, Double>>>("contours") as List<Map<String, Double>>,
+                    call.argument<Int>("thickness") as Int,
+                    call.argument<Int>("lineType") as Int,
+                    call.argument<Int>("maxLevel") as Int,
+                    result,
+                )
+            } catch (e: Exception) {
+                result.error("OpenCV-Error", "Android: "+e.message, e)
+            }
+        }
 
       else -> result.notImplemented()
     }

@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="014407e5-a15f-4293-a84a-3d91127674d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/ar/fgsoruco/opencv4/factory/detection/CannyFactory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/ar/fgsoruco/opencv4/factory/findcontours/FindContoursFactory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/factory/detection/canny_factory.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/factory/findcontours/find_contours_factory.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/ar/fgsoruco/opencv4/Opencv4Plugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/ar/fgsoruco/opencv4/Opencv4Plugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/opencv_4.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/opencv_4.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opencv_4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/opencv_4.iml" afterDir="false" />
-    </list>
+    <list default="true" id="014407e5-a15f-4293-a84a-3d91127674d2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,15 +36,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "D:/Ciheul Projects/Custom Packages Flutter/opencv_4",
-    "show.migrate.to.gradle.popup": "false"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -81,5 +70,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
