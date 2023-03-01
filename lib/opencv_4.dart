@@ -747,7 +747,6 @@ class Cv2 {
     CVPathFrom pathFrom = CVPathFrom.ASSETS,
     required String pathString,
     required List<Rect> contours,
-    required double threshold2,
     required int thickness,
     required int lineType,
     required int maxLevel,
