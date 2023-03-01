@@ -21,6 +21,7 @@ class DrawContoursFactory {
         ) {
             when(pathType) {
                 1 -> result.success(drawContoursS(pathString, contours, thickness, lineType, maxLevel))
+                2 -> result.success(drawContoursB(data, contours, thickness, lineType, maxLevel))
             }
         }
 
@@ -64,7 +65,7 @@ class DrawContoursFactory {
                     lineType,
                     hierarchy,
                     maxLevel,
-                    Point(),
+                    Point()
                 )
 
                 val matOfByte = MatOfByte()
@@ -82,7 +83,7 @@ class DrawContoursFactory {
             thickness: Int,
             lineType: Int,
             maxLevel: Int
-        ) {
+        ): ByteArray {
             val listMatOfPoint = mutableListOf<MatOfPoint>()
 
             contours.forEach { contour ->
@@ -113,7 +114,7 @@ class DrawContoursFactory {
                     lineType,
                     hierarchy,
                     maxLevel,
-                    Point(),
+                    Point()
                 )
 
                 val matOfByte = MatOfByte()
