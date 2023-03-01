@@ -8,6 +8,7 @@ import ar.fgsoruco.opencv4.factory.structural_analysis_and_shape_descriptors.Fin
 import ar.fgsoruco.opencv4.factory.imagefilter.*
 import ar.fgsoruco.opencv4.factory.miscellaneous.AdaptiveThresholdFactory
 import ar.fgsoruco.opencv4.factory.miscellaneous.DistanceTransformFactory
+import ar.fgsoruco.opencv4.factory.miscellaneous.DrawContoursFactory
 import ar.fgsoruco.opencv4.factory.miscellaneous.ThresholdFactory
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
@@ -353,7 +354,7 @@ class Opencv4Plugin: FlutterPlugin, MethodCallHandler {
                     call.argument<Int>("thickness") as Int,
                     call.argument<Int>("lineType") as Int,
                     call.argument<Int>("maxLevel") as Int,
-                    result,
+                    result
                 )
             } catch (e: Exception) {
                 result.error("OpenCV-Error", "Android: "+e.message, e)
