@@ -69,7 +69,7 @@ class DrawContoursFactory {
                 )
 
                 val matOfByte = MatOfByte()
-                Imgcodecs.imencode(".jpg", dst, matOfByte)
+                Imgcodecs.imencode(".jpg", src, matOfByte)
                 byteArray = matOfByte.toArray()
                 byteArray
             } catch (e: Exception) {
