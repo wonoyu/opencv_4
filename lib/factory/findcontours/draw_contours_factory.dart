@@ -26,14 +26,16 @@ class DrawContoursFactory {
           "pathType": 1,
           "pathString": pathString,
           "data": Uint8List(0),
-          'contours': contours.map(
-            (contour) => {
-              'x': contour.left,
-              'y': contour.top,
-              'width': contour.width,
-              'height': contour.height,
-            },
-          ),
+          'contours': contours
+              .map(
+                (contour) => <dynamic, dynamic>{
+                  'x': contour.left,
+                  'y': contour.top,
+                  'width': contour.width,
+                  'height': contour.height,
+                },
+              )
+              .toList(),
           'thickness': thickness,
           'lineType': lineType,
           'maxLevel': maxLevel,
@@ -45,14 +47,16 @@ class DrawContoursFactory {
           "pathType": 2,
           "pathString": '',
           "data": await _file.readAsBytes(),
-          'contours': contours.map(
-            (contour) => {
-              'x': contour.left,
-              'y': contour.top,
-              'width': contour.width,
-              'height': contour.height,
-            },
-          ),
+          'contours': contours
+              .map(
+                (contour) => <dynamic, dynamic>{
+                  'x': contour.left,
+                  'y': contour.top,
+                  'width': contour.width,
+                  'height': contour.height,
+                },
+              )
+              .toList(),
           'thickness': thickness,
           'lineType': lineType,
           'maxLevel': maxLevel,
@@ -65,14 +69,16 @@ class DrawContoursFactory {
           "pathType": 3,
           "pathString": '',
           "data": _fileAssets,
-          'contours': contours.map(
-            (contour) => {
-              'x': contour.left,
-              'y': contour.top,
-              'width': contour.width,
-              'height': contour.height,
-            },
-          ),
+          'contours': contours
+              .map(
+                (contour) => <dynamic, dynamic>{
+                  'x': contour.left,
+                  'y': contour.top,
+                  'width': contour.width,
+                  'height': contour.height,
+                },
+              )
+              .toList(),
           'thickness': thickness,
           'lineType': lineType,
           'maxLevel': maxLevel,
